@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes Centradas</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Corrección de typo, 'hv' a 'vh' */
+            background-color: rgb(255, 60, 60);
+            font-family: sans-serif;
+        }
+        img {
+            width: 20%;
+            height: 20%;
+            margin: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        iframe {
+            width: 50%; /* Ajusté el tamaño del iframe para una mejor visualización */
+            height: 80%;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1 style="font-family: sans-serif; padding: 10px;">Cartelera de película</h1>
+        <a href="img/imagen1.jfif" target="frame">
+        <img src="img/imagen1.jfif" alt="Imagen 1"></a>
+        <a href="img/imagen2.jfif" target="frame">
+        <img src="img/imagen2.jfif" alt="Imagen 2"></a>
+        <br>
+        <a href="img/imagen3.jfif" target="frame">
+        <img src="img/imagen3.jfif" alt="Imagen 3"></a>
+        <a href="img/imagen4.jpg" target="frame">
+        <img src="img/imagen4.jpg" alt="Imagen 4"></a>
+        <br>
+    </div>
+    <iframe src="" frameborder="0" style="background-color: aliceblue;" name="frame"></iframe>
+</body>
+</html>
