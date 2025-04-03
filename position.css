@@ -1,0 +1,69 @@
+*{
+    text-shadow: 0 0 5px white;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+.contenedor {
+  position : relative;
+  background-color: gray;
+  height: 300px;
+}
+.caja1{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100px;
+    background-color: red;
+    left: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.caja2{
+    position: absolute;
+    width: 100px;
+    height: 500px;
+    background-color: blue;
+    left: 50px;
+    top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.caja3{
+    position: absolute;
+    width: 100px;
+    height: 600px;
+    background-color: green;
+    left: 200px;
+    top: 0;
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.caja4{
+    position: absolute;
+    width: 700px;
+    height: 100px;
+    background-color: yellow;
+    left: 0;
+    top: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.caja5{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    right: 0;
+    bottom: 0;
+    background-color: pink;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
