@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Fuente más moderna */
+}
+
+body {
+    background-color: #f0f8ff; /* Fondo más suave */
+    color: #333; /* Texto más legible */
+    line-height: 1.6;
+}
+
+.container {
+    margin: 0 auto;
+    height: 100vh;
+    width: 100%;
+    background-color: #ffffff; /* Fondo blanco para contraste */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para el contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden;
+}
+
+.encabezado {
+    width: 100%;
+    height: 20vh;
+    background-color: #0078d7; /* Azul más moderno */
+    color: #fff; /* Texto blanco */
+    border-bottom: 2px solid #005a9e; /* Línea decorativa */
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem; /* Tamaño de texto más grande */
+    font-weight: bold;
+}
+
+.contenido {
+    display: flex;
+    background: #e6f7ff; /* Fondo más claro */
+    justify-content: space-around;
+    align-items: center; /* Centra verticalmente */
+    flex: 1;
+    padding: 20px; /* Espaciado interno */
+    gap: 20px; /* Espaciado entre cajas */
+}
+
+.caja {
+    flex: 1;
+    max-width: 300px; /* Limita el ancho */
+    margin: 15px;
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco */
+    border: 1px solid #ddd; /* Borde más claro */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación */
+}
+
+.caja:hover {
+    transform: translateY(-5px); /* Efecto hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+.futer {
+    width: 100%;
+    height: 10vh;
+    background-color: #0078d7;
+    color: #fff;
+    border-top: 2px solid #005a9e;
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+@media (max-width: 500px) {
+    .contenido {
+        flex-direction: column;
+        padding: 10px; /* Reduce el espaciado */
+    }
+
+    .caja {
+        max-width: 100%; /* Ocupa todo el ancho */
+    }
+}
