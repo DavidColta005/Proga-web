@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen practico</title>
+</head>
+<link rel="stylesheet" href="examen2.css">
+
+<body>
+    <div class="contenedor-principal">
+        <h1>Examen practico Parcial 2</h1>
+        <h2>Nombre del alumno: Ramos Miranda David Adrian</h2>
+        <button class="boton1" onmouseover="ocultar()" onmouseout="mostrar()">Galeria de imagenes</button>
+        <div class="contenedor-imagenes">
+            <img src="img1.jpg" class="imagen-clase" alt="Imagen 1">
+            <img src="img2.jpg" class="imagen-clase" alt="Imagen 2">
+            <img src="img3.jpg" class="imagen-clase" alt="Imagen 3">
+            <img src="img4.jpg" class="imagen-clase" alt="Imagen 4">
+        </div>
+    </div>
+    
+    <script>
+        function ocultar() {    
+            const images = document.querySelectorAll('.imagen-clase');
+            images.forEach(image => {
+                image.style.display = 'none';
+            });
+        }
+        function mostrar() {
+            const images = document.querySelectorAll('.imagen-clase');
+            images.forEach(image => {
+                image.style.display = 'block';
+            });
+        }
+    </script> 
+
+</body>
+</html>
