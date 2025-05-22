@@ -1,0 +1,106 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fondo y fuente general */
+body {
+    background: #1c1f20;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    color: #e0e0e0;
+}
+
+/* Contenedor del formulario */
+form {
+    margin: auto;
+    background: #151718a1;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5);
+    max-width: 450px;
+    width: 100%;
+    height: 100%;
+    max-height: 1000px;
+    border: 1px solid #2c2c2c;
+}
+
+/* Título */
+.title {
+    font-size: 28px;
+    background: linear-gradient(to right, #9c27b0, #00bcd4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Grupos de entrada */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #ccc;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 12px;
+    background-color: #2b2b2b;
+    border: 1px solid #444;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #eee;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #00bcd4;
+    outline: none;
+    background-color: #333;
+}
+
+/* Botones */
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    background: linear-gradient(to right, #673ab7, #00bcd4);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 188, 212, 0.4);
+}
+
+/* Resultado */
+.result {
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    color: #5bf89c;
+    margin-top: 15px;
+}

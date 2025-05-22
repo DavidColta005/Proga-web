@@ -1,0 +1,110 @@
+/* Reset básico para evitar estilos por defecto */
+body, h2, form, label, input, select, option, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Fondo con degradado y centrado de contenido */
+.pagina-estacionamiento {
+    margin: auto;
+    max-width: 80%;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #78a7ff 0%, #ffffff 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Título principal mejorado */
+.titulo-principal {
+    font-size: 2.5em;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: 1px 1px 8px #00000054;
+}
+
+/* Tarjeta para el formulario */
+.formulario-pago {
+    background: #fff;
+    padding: 35px 40px 25px 40px;
+    border-radius: 18px;
+    box-shadow: 0 6px 32px rgba(48, 48, 48, 0.521);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 320px;
+    gap: 18px;
+}
+
+/* Etiquetas */
+.etiqueta-horas,
+.etiqueta-tipo-auto {
+    font-size: 1.1em;
+    color: #34495e;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+/* Campos de entrada */
+.campo-horas,
+.campo-tipo-auto {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 1.1em;
+    border: 1px solid #bfc9d1;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    background: #f7fafc;
+    transition: border 0.2s;
+}
+
+/* Opciones del select */
+.campo-tipo-auto option {
+    font-size: 1em;
+    padding: 6px;
+}
+
+/* Botón de calcular */
+.boton-calcular {
+    width: 100%;
+    background: rgb(78, 151, 235);
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.15em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 2px 8px rgba(76, 175, 80, 0.08);
+    transition: background 0.2s, transform 0.1s;
+}
+
+.boton-calcular:hover {
+    background: rgb(0, 94, 216);
+    transform: translateY(-2px) scale(1.03);
+}
+
+/* Resultado del pago */
+.resultado-pago {
+    margin-top: 28px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #2d3a4b;
+    text-align: center;
+    min-height: 32px;
+    background: #eafaf1;
+    border-radius: 8px;
+    padding: 12px 0;
+    box-shadow: 0 1px 6px rgba(44, 62, 80, 0.07);
+    width: 100%;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}

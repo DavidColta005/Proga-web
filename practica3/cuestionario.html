@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>¿Cuánto sabes de cine clásico?</title>
+    <script src="script/auto.js" defer></script>
+    <link rel="stylesheet" href="style/auto.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>¿Cuánto sabes de cine clásico?</h1>
+        <form id="quizForm">
+            <div class="pregunta">
+                <label>1. ¿Quién dirigió la película "Ciudadano Kane"?</label>
+                <input type="text" id="q1" name="q1">
+            </div>
+
+            <div class="pregunta">
+                <label>2. ¿Cuál es el nombre del personaje principal en "Casablanca"?</label>
+                <input type="text" id="q2" name="q2">
+            </div>
+
+            <div class="pregunta">
+                <label>3. ¿En qué año se estrenó "Lo que el viento se llevó"?</label>
+                <input type="number" id="q3" name="q3">
+            </div>
+
+            <div class="pregunta">
+                <label>4. ¿Qué actriz protagonizó "Desayuno en Tiffany's"?</label>
+                <input type="text" id="q4" name="q4">
+            </div>
+
+            <div class="pregunta">
+                <label>5. ¿Qué famoso monstruo apareció por primera vez en una película de 1933?</label>
+                <input type="text" id="q5" name="q5">
+            </div>
+
+            <button type="button" onclick="evaluar()">Enviar respuestas</button>
+        </form>
+
+        <h2>Resultados:</h2>
+        <div id="resultados"></div>
+        <iframe id="visorPDF" width="100%" height="500px"></iframe>
+    </div>
+</body>
+</html>
